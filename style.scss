@@ -1,0 +1,119 @@
+$body-bg: #fff;
+$body-color: #000;
+$blue:    #0d6efd !default;
+$indigo:  #056fec !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+$grey:     #636C79;
+$primary :  #7030cc;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary" : #777777,
+  "white": #f5f5f5,
+  "success":    $green,
+  "info":       $cyan,
+  "warning":    $orange,
+  "yellow":     $yellow,
+  "danger":     $red,
+  "light":      #f5f5f5,
+  "dark":       #10181D,
+  "black":      #000,
+  "teal":       $teal,
+  "grey" :      $grey,
+);
+
+// Bootstrap and its default variables
+@import "./assets/bootstrap/scss/bootstrap";
+
+
+
+.btn {
+    border-radius: 0px;
+}
+
+.newsletter input:focus {
+    outline:none;
+    box-shadow:none;
+}
+
+.btn-outline-primary {
+    // background-color: linear-gradient(130deg, #3da5ff 50%, #002bc7);    
+    border-color: $primary;
+    color:$primary; 
+}
+
+p {
+    color:#777777;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.display-4.heading {
+    line-height:70px;
+}
+
+.h1.heading {
+    line-height:50px;
+}
+
+.wrap {
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+hr {
+    color:#d7d7d7;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding:0;
+    margin:20px 0px;
+    line-height:40px; 
+    color:#d7d7d7;
+}
+
+.social-icons span {
+    width: 40px;
+    height: 40px;
+    margin-right:10px;
+    background: #777777;
+    color:#ffffff;
+    border-radius:50%;  
+    text-align:center;
+}
+
+.social-icons span i {
+    vertical-align: middle;
+    line-height : 40px;
+}
+
+.card {
+    border-radius:50px;
+    box-shadow: 5px 5px 5px 0px #ddd;
+    overflow: hidden;
+}
+
+.card .text-content {
+    border-radius:50px;
+    transition: 350ms;
+}
+
+.card:hover .text-content {    
+    background-color: $primary;
+    color: #f5f5f5;
+    transition: 350ms;
+}
+
+.card:hover .text-content p {
+    color: #f5f5f5;
+}
